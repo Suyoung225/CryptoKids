@@ -41,7 +41,7 @@ artifacts 폴더 생성됨, 추후 CryptoKids.json에 있는 "abi" 필요
 6. Hardhat Ignition 플러그인을 사용하여 localhost로 smart contract 배포
 
 ```
-npx hardhat ignition deploy ./ignition/modules/Lock.js --network localhost
+npx hardhat ignition deploy ./ignition/modules/CryptoKids.js --network localhost
 ```
 
 ![스크린샷 2024-07-08 오후 2 21 45](https://github.com/Suyoung225/CryptoKids/assets/87157566/838770dd-8894-4898-b16f-53bd89cdeab7)
@@ -74,15 +74,20 @@ npx create-react-app client
 cd client
 ```
 
-2. contracts의 ABI 넣어주기 (/client/src/CryptoKidsABI.json)
+2. install ether.js
+```
+npm install ethers
+```
+
+3. contracts의 ABI 넣어주기 (/client/src/CryptoKidsABI.json)
 abi 대괄호 [ ] 까지 복붙
 
 ![스크린샷 2024-07-08 오후 3 15 30](https://github.com/Suyoung225/CryptoKids/assets/87157566/513860a1-2474-4c85-8655-f3d582cc36bc)
 
-3. contractAddress 넣어주기
+4. contractAddress 넣어주기
 contract 6번에서 생성된 contract address 복붙
 
-4. 실행
+5. 실행
 
 ```
 npx run
